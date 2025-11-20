@@ -1,0 +1,326 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "admin",
+            "email": "admin@moneytracker.com",
+            "password_hash": "$2b$10$hashedadminpassword",
+            "full_name": "Quản Trị Viên",
+            "phone": "0909123456",
+            "avatar_url": "/avatars/admin.jpg",
+            "currency": "VND",
+            "language": "vi",
+            "timezone": "Asia/Ho_Chi_Minh",
+            "role": "admin",
+            "is_active": 1,
+            "google_id": null,
+            "last_login": "2024-03-20T08:15:00Z",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-03-20T08:15:00Z"
+        },
+        {
+            "id": 2,
+            "username": "nguyenvanA",
+            "email": "nguyenvana@email.com",
+            "password_hash": "$2b$10$hashedpassword123",
+            "full_name": "Nguyễn Văn A",
+            "phone": "0912345678",
+            "avatar_url": "/avatars/user1.jpg",
+            "currency": "VND",
+            "language": "vi",
+            "timezone": "Asia/Ho_Chi_Minh",
+            "role": "user",
+            "is_active": 1,
+            "google_id": null,
+            "last_login": "2024-03-20T09:15:00Z",
+            "created_at": "2024-01-15T08:30:00Z",
+            "updated_at": "2024-03-20T09:15:00Z"
+        },
+        {
+            "id": 3,
+            "username": "tranthiB",
+            "email": "tranthib@email.com",
+            "password_hash": "$2b$10$hashedpassword456",
+            "full_name": "Trần Thị B",
+            "phone": "0987654321",
+            "avatar_url": "/avatars/user2.jpg",
+            "currency": "USD",
+            "language": "en",
+            "timezone": "UTC",
+            "role": "user",
+            "is_active": 1,
+            "google_id": "google_oauth_123456",
+            "last_login": "2024-03-20T10:30:00Z",
+            "created_at": "2024-01-20T10:15:00Z",
+            "updated_at": "2024-03-20T10:30:00Z"
+        }
+    ],
+    "sessions": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.admin",
+            "expires_at": "2024-03-21T08:15:00Z",
+            "created_at": "2024-03-20T08:15:00Z"
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.user",
+            "expires_at": "2024-03-21T09:15:00Z",
+            "created_at": "2024-03-20T09:15:00Z"
+        }
+    ],
+    "accounts": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "account_name": "Vietcombank",
+            "account_type": "BANK",
+            "balance": 35000000,
+            "currency": "VND",
+            "account_number": "1234567890",
+            "color": "#3498db",
+            "is_active": 1,
+            "created_at": "2024-01-15T09:00:00Z",
+            "updated_at": "2024-03-20T14:20:00Z"
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "account_name": "Ví Momo",
+            "account_type": "E_WALLET",
+            "balance": 5000000,
+            "currency": "VND",
+            "account_number": "MOMO123456",
+            "color": "#8e44ad",
+            "is_active": 1,
+            "created_at": "2024-01-20T11:30:00Z",
+            "updated_at": "2024-03-20T09:45:00Z"
+        },
+        {
+            "id": 3,
+            "user_id": 3,
+            "account_name": "Techcombank",
+            "account_type": "BANK",
+            "balance": 2000,
+            "currency": "USD",
+            "account_number": "9876543210",
+            "color": "#e74c3c",
+            "is_active": 1,
+            "created_at": "2024-01-25T13:45:00Z",
+            "updated_at": "2024-03-20T16:30:00Z"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "name": "Ăn uống",
+            "type": "EXPENSE",
+            "color": "#e74c3c",
+            "icon": "restaurant",
+            "parent_id": null,
+            "is_default": 0,
+            "created_at": "2024-01-15T10:00:00Z"
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "name": "Lương",
+            "type": "INCOME",
+            "color": "#2ecc71",
+            "icon": "account_balance",
+            "parent_id": null,
+            "is_default": 0,
+            "created_at": "2024-01-15T10:00:00Z"
+        },
+        {
+            "id": 3,
+            "user_id": 2,
+            "name": "Mua sắm",
+            "type": "EXPENSE",
+            "color": "#9b59b6",
+            "icon": "shopping_cart",
+            "parent_id": null,
+            "is_default": 0,
+            "created_at": "2024-01-15T10:00:00Z"
+        },
+        {
+            "id": 4,
+            "user_id": 2,
+            "name": "Di chuyển",
+            "type": "EXPENSE",
+            "color": "#f39c12",
+            "icon": "directions_car",
+            "parent_id": null,
+            "is_default": 0,
+            "created_at": "2024-01-15T10:00:00Z"
+        },
+        {
+            "id": 5,
+            "user_id": null,
+            "name": "Food & Dining",
+            "type": "EXPENSE",
+            "color": "#e74c3c",
+            "icon": "restaurant",
+            "parent_id": null,
+            "is_default": 1,
+            "created_at": "2024-01-01T00:00:00Z"
+        }
+    ],
+    "transactions": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "account_id": 1,
+            "category_id": 1,
+            "amount": 150000,
+            "transaction_type": "EXPENSE",
+            "description": "Ăn tối với bạn bè",
+            "transaction_date": "2024-03-20T19:30:00Z",
+            "note": "Nhà hàng ABC",
+            "tags": [
+                "ăn uống",
+                "bạn bè"
+            ],
+            "attachment_url": "/receipts/dinner_abc.jpg",
+            "is_deleted": 0,
+            "created_at": "2024-03-20T20:00:00Z",
+            "updated_at": "2024-03-20T20:00:00Z"
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "account_id": 1,
+            "category_id": 2,
+            "amount": 15000000,
+            "transaction_type": "INCOME",
+            "description": "Lương tháng 3",
+            "transaction_date": "2024-03-05T09:00:00Z",
+            "note": "Công ty XYZ",
+            "tags": [
+                "lương",
+                "thu nhập"
+            ],
+            "attachment_url": null,
+            "is_deleted": 0,
+            "created_at": "2024-03-05T09:30:00Z",
+            "updated_at": "2024-03-05T09:30:00Z"
+        }
+    ],
+    "recurring_transactions": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "account_id": 1,
+            "category_id": 2,
+            "amount": 15000000,
+            "description": "Lương tháng",
+            "frequency": "MONTHLY",
+            "next_occurrence": "2024-04-05",
+            "is_active": 1,
+            "created_at": "2024-01-15T12:00:00Z",
+            "updated_at": "2024-03-05T08:00:00Z"
+        }
+    ],
+    "goals": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "name": "Mua laptop mới",
+            "target_amount": 25000000,
+            "current_amount": 15000000,
+            "deadline": "2024-06-30",
+            "status": "IN_PROGRESS",
+            "color": "#3498db",
+            "created_at": "2024-01-15T11:00:00Z",
+            "updated_at": "2024-03-20T15:30:00Z"
+        }
+    ],
+    "budgets": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "category_id": 1,
+            "amount": 3000000,
+            "period": "MONTHLY",
+            "start_date": "2024-03-01",
+            "end_date": "2024-03-31",
+            "created_at": "2024-03-01T00:00:00Z",
+            "updated_at": "2024-03-01T00:00:00Z"
+        }
+    ],
+    "notifications": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "title": "Chào mừng trở lại!",
+            "content": "Cập nhật tình hình tài chính của bạn hôm nay nào.",
+            "type": "INFO",
+            "is_read": 1,
+            "created_at": "2024-03-20T09:15:00Z"
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "title": "Cảnh báo ngân sách",
+            "content": "Bạn đã sử dụng 80% ngân sách ăn uống tháng này",
+            "type": "WARNING",
+            "is_read": 0,
+            "created_at": "2024-03-19T10:00:00Z"
+        }
+    ],
+    "export_logs": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "export_type": "EXCEL",
+            "filters": {
+                "date_range": "2024-03-01 to 2024-03-31",
+                "categories": [
+                    1,
+                    3
+                ],
+                "accounts": [
+                    1,
+                    2
+                ]
+            },
+            "file_path": "/exports/report_202403_user2.xlsx",
+            "created_at": "2024-03-20T16:45:00Z"
+        }
+    ],
+    "dashboard_stats": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "total_balance": 40000000,
+            "total_income": 15000000,
+            "total_expense": 1350000,
+            "savings_rate": 91,
+            "month": "2024-03",
+            "updated_at": "2024-03-20T23:59:00Z"
+        }
+    ],
+    "system_settings": [
+        {
+            "id": 1,
+            "setting_key": "app_name",
+            "setting_value": "Money Tracker",
+            "description": "Tên ứng dụng"
+        },
+        {
+            "id": 2,
+            "setting_key": "default_currency",
+            "setting_value": "VND",
+            "description": "Tiền tệ mặc định"
+        },
+        {
+            "id": 3,
+            "setting_key": "max_file_size",
+            "setting_value": "5242880",
+            "description": "Kích thước file tối đa (bytes)"
+        }
+    ]
+}
